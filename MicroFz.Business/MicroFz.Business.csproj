@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <!--<ItemGroup>
+    <PackageReference Include="CoreBase" Version="1.0.1" />
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <PackageReference Include="CoreBase" Version="1.0.3" />
+  </ItemGroup>
+
+  <!--<ItemGroup>
+    <Reference Include="CoreBase">
+      <HintPath>E:\Project\CoreBase\CoreBase\CoreBase\bin\Debug\netcoreapp3.1\CoreBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <ProjectReference Include="..\MicroFz.Common\MicroFz.Common.csproj" />
+    <ProjectReference Include="..\MicroFz.Data\MicroFz.Data.csproj" />
+  </ItemGroup>
+
+</Project>

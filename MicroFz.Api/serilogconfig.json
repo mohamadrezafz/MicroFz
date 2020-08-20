@@ -1,0 +1,23 @@
+{
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.Splunk", "Serilog.Sinks.RollingFile" ],
+    "MinimumLevel": "Debug",
+    "WriteTo": [
+      {
+        "Name": "Console"
+      },
+      {
+        "Name": "RollingFile",
+        "Args": {
+          "pathFormat": "E:/Log/MicroFz/{Date}.txt",
+          "outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level}] {Message}{NewLine}{Exception}",
+          "fileSizeLimitBytes": null,
+          "retainedFileCountLimit": null
+        }
+      }
+    ],
+    "Properties": {
+      "Application": "MicroFz System"
+    }
+  }
+}
